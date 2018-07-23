@@ -1,0 +1,2 @@
+;; Savanna is a collection of useful utils for Gerbil Scheme
+(package: savanna)
