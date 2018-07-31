@@ -1,7 +1,5 @@
-#!/usr/bin/env gxi
-;; -*- Gerbil -*-                                                                                                                     
+#!/usr/bin/env gxi                                                                                                                   
 
-(import :std/build-script
-        :std/make)
+(import :std/build-script)
 
 (defbuild-script '("utils/list"))
