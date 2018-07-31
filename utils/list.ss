@@ -1,9 +1,8 @@
 ;; -*- Gerbil -*-
 ;;;; set of tools for lists
 
-(export #t)
-
 (import :std/iter)
+(export #t)
 
 (def (build-list n proc)
   (let ((result []))
