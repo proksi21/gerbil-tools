@@ -1,6 +1,5 @@
 #!/usr/bin/env gxi                                                                                                                   
 
-(import :std/build-script
-        :std/iter)
+(import :std/build-script)
 
 (defbuild-script '("utils/list"))
