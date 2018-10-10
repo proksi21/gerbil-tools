@@ -2,4 +2,5 @@
 
 (import :std/build-script)
 
-(defbuild-script '("utils/list"))
+(defbuild-script '("list"
+                   "vk"))
