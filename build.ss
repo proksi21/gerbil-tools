@@ -1,6 +1,5 @@
-#!/usr/bin/env gxi                                                                                                                   
+#!/usr/bin/env gxi
 
 (import :std/build-script)
 
-(defbuild-script '("list"
-                   "vk"))
+(defbuild-script '("list" "vk" "yaml"))
