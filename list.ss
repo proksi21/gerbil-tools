@@ -23,7 +23,7 @@
   (and (list? lst) (equal? (length lst) 0)))
 
 (def (last lst)
-  (list-ref lst (- (length lst) 1)))
+  (list-ref lst (1- (length lst))))
 
 (def (take lst pos)
   (reverse (list-tail (reverse lst) (- (length lst) pos))))
@@ -33,4 +33,6 @@
 
 (defsyntax (nest stx)
   (def nest-list (cdr (syntax->datum stx)))
-  (foldl (lambda (x y) (reverse (cons y (reverse x)))) (car (reverse nest-list)) (cdr (reverse nest-list))))
+  (foldl (lambda (x y) (reverse (cons y (reverse x))))
+	 (car (reverse nest-list))
+	 (cdr (reverse nest-list))))
