@@ -31,6 +31,8 @@
 (def (split-at lst pos)
   (values (take lst pos) (list-tail lst pos)))
 
-(defsyntax (nest stx)
-  (def nest-list (cdr (syntax->datum stx)))
-  (foldl (lambda (x y) (reverse (cons y (reverse x)))) (car (reverse nest-list)) (cdr (reverse nest-list))))
+(defrules nest ()
+  ((_ single)
+   single)
+  ((recur ... (outer ...) inner)
+   (recur ... (outer ... inner))))
