@@ -1,2 +1,6 @@
 # Gerbil xerx package
-Collection of useful tools for Gerbil Scheme
+Collection of useful macros for Gerbil Scheme
+ - alambda
+ - aif
+ - nest
+

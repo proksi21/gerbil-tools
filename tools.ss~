@@ -1,0 +1,11 @@
+;; -*- Gerbil -*-
+;;;; set of tools for lists
+
+(export #t)
+
+(defrules nest ()
+  ((_ single)
+   single)
+  ((recur ... (outer ...) inner)
+   (recur ... (outer ... inner))))
+
