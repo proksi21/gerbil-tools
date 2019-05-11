@@ -4,3 +4,12 @@ Collection of useful macros for Gerbil Scheme
  - aif
  - nest
 
+## Installation
+Install:
+```
+gxpkg install github.com/proksi21/gerbil-tools
+```
+Import:
+```
+(import :xerx/tools)
+```

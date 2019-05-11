@@ -18,7 +18,10 @@
   (syntax-case stx ()
     ((macro case then else)
      (with-syntax ((it-id (datum->syntax #'macro 'it)))
-       #'(let (it-id case) (if it-id then else))))))
+       #'(let (it-id case) (if it-id then else))))
+    ((macro case then)
+     (with-syntax ((it-id (datum->syntax #'macro 'it)))
+       #'(let (it-id case) (if it-id then))))))
 
 ;; nest macro
 (defrules nest ()
